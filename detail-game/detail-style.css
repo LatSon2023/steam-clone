@@ -1,0 +1,62 @@
+.detail-wrap {
+    padding: 0 20px;
+    min-height: 100vh;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    background-image: url(https://steamcdn-a.akamaihd.net/steam/apps/570/page_bg_generated_v6b.jpg?t=1554408611);
+}
+
+.detail-main {
+    left: 50%;
+    top: 100px;
+    padding: 20px;
+    color: #ddd;
+    position: absolute;
+    border-radius: 10px;
+    transform: translateX(-50%);
+    background-color: #151515;
+}
+
+.details {
+    display: flex;
+}
+
+.desc-wrap {
+    padding: 0 10px;
+    font-size: 14px;
+    max-width: 40%;
+    text-align: justify;
+}
+
+.desc {
+    margin-bottom: 15px;
+}
+
+.desc2 {
+    margin: 5px 0;
+}
+
+.img {
+    width: 600px;
+    height: 200px;
+}
+
+.desc2 span {
+    color: rgb(30 130 200 / 50%)
+}
+
+.title-tag {
+    margin-bottom: 5px;
+}
+
+.tags {
+    margin-top: 20px;
+}
+
+.tagg {
+    color: rgba(173, 205, 228, 0.5);
+    padding: 3px 5px;
+    background-color: rgba(77, 161, 222, 0.1);
+    display: inline-block;
+    margin: 0 5px;
+}

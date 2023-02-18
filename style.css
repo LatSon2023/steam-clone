@@ -1,0 +1,212 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --word-color: #c6d4df;
+    --background-color: #1b2838;
+    --word-side-nav-color: #66c0f4;
+    --background-nav-color: #171a21;
+}
+
+.on {
+    background-image: linear-gradient(to right, rgba(0, 255, 255, 10%), rgba(0, 255, 255, 50%));
+}
+
+#web {
+    padding: 0 20px;
+    min-height: 100vh;
+    font-family: "Roboto", sans-serif;
+    background-image: url(https://previews.123rf.com/images/dana891125/dana8911251606/dana891125160600181/60144463-mountain-seamless-background-illustration-for-mobile-app-web-game-with-snow-and-ice-vector-template-.jpg);
+}
+
+#nav-bar {
+    top: 0;
+    right: 0;
+    z-index: 2;
+    left: -20px;
+    padding: 10px;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    background-color: var(--background-nav-color);
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.nav-items {
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-item {
+    margin: 0 30px;
+    transition: .2s;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--word-color);
+}
+
+.nav-item:hover {
+    color: #fff;
+}
+
+#container {
+    display: flex;
+    margin-top: 58.5px;
+    position: relative;
+}
+
+.side-bar {
+    top: 25vh;
+    left: 10px;
+    width: 20%;
+    min-width: 100px;
+    z-index: 1;
+    padding: 20px;
+    position: fixed;
+    border-radius: 10px;
+    background-color: rgb(0 0 0 / 60%);
+}
+
+.search {
+    width: 100%;
+    padding: 10px 0;
+    position: relative;
+    border-bottom: 2px solid var(--word-color);
+}
+
+.input-field {
+    width: 100%;
+    border:none;
+    outline: none;
+    line-height: 18px;
+    border-radius: 10px;
+    padding: 5px 50px 5px 20px;
+}
+
+.btn-search {
+    right: 0;
+    padding: 5px;
+    position: absolute;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background-color: var(--background-color);
+}
+
+.btn-search:hover {
+    cursor: pointer;
+    background-color: #000;
+}
+
+.side-items {
+    height: 50vh;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.side-items:hover {
+    overflow-y: scroll;
+}
+
+.side-items::-webkit-scrollbar {
+    width: 6px;
+}
+
+.side-items::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #fff;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+}
+
+.side-item a {
+    display: block;
+    padding: 10px 0;
+    font-weight: 600;
+    color: rgb(255, 255, 200);
+}
+
+.side-item a:hover {
+    cursor: pointer;
+    margin: 0px -20px;
+    padding: 10px 20px;
+    border-right: 2px solid #fff;
+    background-image: linear-gradient(to right, rgba(0, 255, 255, 10%), rgba(0, 255, 255, 50%));
+}
+
+.content {
+    width: 80%;
+    margin-left: 20%;
+}
+
+.title {
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 30vh;
+    justify-content: space-around;
+}
+
+.games-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.game-box {
+    width: 200px;
+    margin: 20px;
+}
+
+.game-box:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+.img {
+    width: 100%;
+    height: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+}
+
+.game-info {
+    float:right;
+    padding: 5px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.name-game {
+    font-size: 10px;
+}
+
+.price-game {
+    font-size: 12px;
+}
