@@ -36,7 +36,7 @@ const renderGames = async (list) => {
             `
             gamesBox.appendChild(gameBox)
             gameBox.addEventListener('click', () => {
-                window.location.href = `http://127.0.0.1:5500/Learn_JS_For_WEB/Steam-Game-Shop/detail-game/details.htm?appId=${game.appid}`
+                window.location.href = `https://steam-freestyle-vuduc.netlify.app/detail-game/details.htm?appId=${game.appid}`
             })
         })
     } catch (error) {
