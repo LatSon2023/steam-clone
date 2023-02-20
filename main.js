@@ -78,6 +78,9 @@ const renderSearch = async () => {
                 </div>
             `
             gamesBox.appendChild(gameBox)
+            gameBox.addEventListener('click', () => {
+                window.location.href = `https://steam-freestyle-vuduc.netlify.app/detail-game/details.htm?appId=${game.appid}`
+            })
         })
     }
     document.querySelector('.title').textContent = `Search: ${inputValue}`
@@ -164,6 +167,9 @@ const renderGenreGameList = async () => {
                 </div>
             `
             gamesBox.appendChild(gameBox)
+        gameBox.addEventListener('click', () => {
+                window.location.href = `https://steam-freestyle-vuduc.netlify.app/detail-game/details.htm?appId=${game.appid}`
+            })
     })
 }
 
